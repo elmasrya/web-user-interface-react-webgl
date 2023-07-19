@@ -1,0 +1,7 @@
+.maplibregl-popup {
+    z-index: 100;
+}
+
+.mapboxgl-popup {
+    z-index: 100;
+}

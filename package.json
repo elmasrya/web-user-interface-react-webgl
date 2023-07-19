@@ -1,0 +1,63 @@
+{
+  "name": "web-user-interface",
+  "version": "2.5.0-alpha+2023.07.05",
+  "private": true,
+  "homepage": "/parkmobile/",
+  "dependencies": {
+    "@deck.gl/react": "^8.9.21",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@turf/turf": "^6.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.3",
+    "classnames": "^2.3.2",
+    "deck.gl": "^8.9.21",
+    "fast-xml-parser": "^4.2.2",
+    "lodash": "^4.17.21",
+    "mapbox-gl": "^2.15.0",
+    "maplibre-gl": "^2.4.0",
+    "nanoid": "^4.0.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-map-gl": "^7.1.2",
+    "react-redux": "^8.0.5",
+    "react-toastify": "^9.1.3",
+    "react-transition-group": "^4.4.5",
+    "react-window": "^1.8.9",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "react-scripts": "^5.0.1"
+  }
+}

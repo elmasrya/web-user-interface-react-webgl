@@ -1,0 +1,17 @@
+.pm-loader {
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    z-index: 5001;
+}
+
+.pm-loader-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 75%;
+    z-index: 5000;
+}

@@ -1,0 +1,11 @@
+.mapbookmarks-delete-icon {
+    color: red;
+}
+
+.mapbookmark-input-error {
+    border-color: red;
+}
+
+.mapbookmark-input-default {
+    border-color: black;
+}

@@ -1,0 +1,8 @@
+.geolayers-btn {
+    display: block;
+    width: 100%;
+}
+
+.geolayers-btn:first-child {
+    margin-bottom: 10px;
+}
