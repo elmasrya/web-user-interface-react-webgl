@@ -14,7 +14,7 @@ function MapBookmarks(props) {
   const [formOpen, setFormOpen] = useState(false);
   const [bookmarkName, setBookmarkName] = useState("");
   const [bookmarkNameError, setBookmarkNameError] = useState(false);
-  const mapBookmarksData = useSelector((state) => state?.configuration?.preferences?.map?.views);
+  const mapBookmarksData = useSelector((state) => state?.mapViews);
 
   function getRows() {
     if (!mapBookmarksData) {

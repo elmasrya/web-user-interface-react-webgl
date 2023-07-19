@@ -12,10 +12,10 @@ export function setMapLibraryInstance(mapLibraryInstance, dispatch) {
     });
 }
 
-export function setMapLibraryType(mapLibraryType, dispatch) {
+export function setMap(map, dispatch) {
     dispatch({
-        type: 'SET_MAP_LIBRARY_TYPE',
-        payload: mapLibraryType
+        type: 'SET_MAP',
+        payload: map
     });
 }
 
@@ -38,4 +38,18 @@ export function setDeckglOverlayType(deckglOverlayType, dispatch) {
         type: 'SET_DECKGL_OVERLAY_TYPE',
         payload: deckglOverlayType
     });
+}
+
+export function setMapViews(mapViews, dispatch) {
+    dispatch({
+        type: 'SET_MAP_VIEWS',
+        payload: mapViews
+    });
+}
+
+    export function setMapType(mapType, dispatch) {
+        dispatch({
+            type: 'SET_MAP_TYPE',
+            payload: mapType
+        });
 }

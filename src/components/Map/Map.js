@@ -18,13 +18,20 @@ const callback = (status, loader) => {
 
 function Map({ children }) {
 
-    const mapType = MAP_TYPE.MAPLIBRE
-    console.log(`>>>> Map Component, mapType=${mapType}`);
+    const mapType = useSelector(
+        (state) => state?.mapType
+    );
 
     if(!mapType) return null;
 
     let mapEl;
-    if (mapType === MAP_TYPE.GOOGLE_MAPS) {
+    if (mapType === MAP_TYPE.MAPBOX) {
+        mapEl = (
+            <Wrapper apiKey={GOOGLE_MAPS_API_KEY} render={render} callback={callback}>
+                <GoogleMap>{children}</GoogleMap>
+            </Wrapper>
+        );
+    } else if (mapType === MAP_TYPE.GOOGLE_MAPS) {
         mapEl = (
             <Wrapper apiKey={GOOGLE_MAPS_API_KEY} render={render} callback={callback}>
                 <GoogleMap>{children}</GoogleMap>

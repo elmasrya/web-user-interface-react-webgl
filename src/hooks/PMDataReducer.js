@@ -1,5 +1,6 @@
 import {config} from '../Configuration';
 
+
 export default (state, action) => {
     switch(action.type) {
         case 'UPDATE_PREFERENCES':
@@ -25,10 +26,9 @@ export default (state, action) => {
             config.deckglGoogleMapsOverlay = action.payload;
             return {...state, deckglGoogleMapsOverlay: action.payload}
 
-        case 'SET_DECKGL_MAPBOX_MAPS_OVERLAY':
-            console.log("PMDataReducer: SET_DECKGL_MAPBOX_MAPS_OVERLAY");
-            config.deckglMapboxOverlay = action.payload;
-            return {...state, deckglMapboxOverlay: action.payload}
+        case 'SET_MAP':
+            console.log("PMDataReducer: SET_MAP");
+            return {...state, map: action.payload}
 
         case 'SET_DECKGL_OVERLAY_TYPE':
             console.log("PMDataReducer: SET_DECKGL_OVERLAY_TYPE");

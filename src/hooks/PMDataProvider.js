@@ -3,10 +3,11 @@ import PMDataReducer from "./PMDataReducer";
 import {
     setMapElementReference as _setMapElementReference,
     setMapLibraryInstance as _setMapLibraryInstance,
-    setMapLibraryType as _setMapLibraryType,
+    setMap as _setMap,
     setDeckglGoogleMapsOverlay as _setDeckglGoogleMapsOverlay,
     setDeckglMapboxOverlay as _setDeckglMapboxOverlay,
     setDeckglOverlayType as _setDeckglOverlayType,
+    setMapType as _setMapType
 } from "./PMDataActions";
 
 const DataContext = createContext();
@@ -17,7 +18,9 @@ const initialState = {
     mapLibraryInstance:null,
     deckglGoogleMapsOverlay:null,
     deckglMapboxOverlay:null,
-    deckglOverlayType:null
+    deckglOverlayType:null,
+    mapViews:null,
+    map:null,
 }
 
 export default function PMDataProvider({children}) {
@@ -27,10 +30,11 @@ export default function PMDataProvider({children}) {
     const setMapElementReference = (mapReference) => _setMapElementReference(mapReference, dispatch);
     const setMapLibraryInstance = (mapLibraryInstance) => _setMapLibraryInstance(mapLibraryInstance, dispatch);
 
-    const setMapLibraryType = (mapLibraryType) => _setMapLibraryType(mapLibraryType, dispatch);
     const setDeckglGoogleMapsOverlay = (deckglGoogleMapsOverlay) => _setDeckglGoogleMapsOverlay(deckglGoogleMapsOverlay, dispatch);
     const setDeckglMapboxOverlay = (deckglMapboxOverlay) => _setDeckglMapboxOverlay(deckglMapboxOverlay, dispatch);
     const setDeckglOverlayType = (deckglOverlayType) => _setDeckglOverlayType(deckglOverlayType, dispatch);
+    const setMapViews = (mapViews) => _setDeckglOverlayType(mapViews, dispatch);
+    const setMap= (map) => _setMap(map, dispatch);
 
 
     const mapElementReference = state.mapElementReference;
@@ -38,6 +42,8 @@ export default function PMDataProvider({children}) {
     const deckglGoogleMapsOverlay = state.deckglGoogleMapsOverlay;
     const deckglMapboxOverlay = state.deckglMapboxOverlay;
     const deckglOverlayType = state.deckglOverlayType;
+    const mapViews = state.mapViews;
+    const map = state.map;
 
     return (
         <DataContext.Provider value={
@@ -47,12 +53,15 @@ export default function PMDataProvider({children}) {
                 deckglGoogleMapsOverlay,
                 deckglMapboxOverlay,
                 deckglOverlayType,
+                mapViews,
+                map,
                 setMapElementReference,
                 setMapLibraryInstance,
-                setMapLibraryType,
                 setDeckglGoogleMapsOverlay,
                 setDeckglMapboxOverlay,
-                setDeckglOverlayType
+                setDeckglOverlayType,
+                setMapViews,
+                setMap
             }}>
             {children}
         </DataContext.Provider>

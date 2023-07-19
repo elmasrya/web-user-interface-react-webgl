@@ -5,7 +5,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-import { MapDisplayOptions } from "./MapDisplayOptions/MapDisplayOptions";
+import MapSelector from "./MapSelector/MapSelector";
 import GeoDrawing from "./GeoDrawing/GeoDrawing";
 import MapBookmarks from "./MapBookmarks/MapBookmarks";
 import GeoLayers from "./GeoLayers/GeoLayers";
@@ -93,10 +93,10 @@ export default function SidebarMenu(props) {
           >
             <Accordion.Item className="accordion-item" eventKey="0">
               <Accordion.Header className="accordion-header">
-                {"Select Map"}
+                {"Map Selector"}
               </Accordion.Header>
               <Accordion.Body>
-                <MapDisplayOptions />
+                <MapSelector />
               </Accordion.Body>
             </Accordion.Item>
 

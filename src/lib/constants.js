@@ -1,5 +1,7 @@
 export const GOOGLE_MAPS_API_KEY = "AIzaSyA0u-QUfKeTUkHycWYTitgzdgY816no1wY";
 export const GOOGLE_MAPS_MAP_ID = "c8e8f420b0840e0c";
+
+export const MAPBOX_API_KEY = "pk.eyJ1IjoiYWVsbWFzcnkiLCJhIjoiY2xrMHJvdXdoMDAzZjNncjFwMWxiNTU1YSJ9.HLV5wRCzMxNpZWs6th0j-g"
 export const MAP_DIV_ID = "map";
 
 /**
@@ -9,7 +11,8 @@ export const MAP_DIV_ID = "map";
 export const MAP_TYPE = {
   GOOGLE_MAPS: "GoogleMaps",
   OPENLAYERS: "OpenLayers",
-  MAPLIBRE: "MapLibre"
+  MAPLIBRE: "MapLibre",
+  MAPBOX: "MapBpx",
 };
 
 /**

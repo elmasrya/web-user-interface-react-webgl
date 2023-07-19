@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-
+import ReactDOM from 'react-dom';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import { Provider } from "react-redux";
 import store from "./store/index";
 import packageJson from "../package.json";
